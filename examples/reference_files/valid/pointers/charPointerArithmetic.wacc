@@ -1,0 +1,16 @@
+# Test char pointers will increment by 1 byte in pointer arithmetic
+
+# Output:
+# a
+# b
+# c
+
+# Program:
+
+begin
+  char[] a = ['a', 'b', 'c'];
+  char *p = &a[1];
+  println *(p - 1);
+  println *p;
+  println *(p + 1)
+end

@@ -1,0 +1,20 @@
+# true if statement that redeclare a local variable inside should allocate new stack
+
+# Output:
+# 2
+# 1
+
+# Program:
+
+begin
+  int x = 1;
+  if true
+  then
+    int x = 2;
+    println x
+  else
+    println "not here"
+  fi;
+  println x
+end
+

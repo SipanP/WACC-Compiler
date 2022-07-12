@@ -1,0 +1,13 @@
+# Tries to assign an int to a pointer should return semantic error
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int* p = 42
+end

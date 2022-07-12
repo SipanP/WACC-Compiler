@@ -1,0 +1,5 @@
+begin
+    int x = 6;
+    int z = 5 + x;
+    println z
+end

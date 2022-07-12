@@ -1,0 +1,14 @@
+# Tries to assign a nested pointer with &*&a should return semantic error
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int a = 1;
+  int *p = &*&a
+end

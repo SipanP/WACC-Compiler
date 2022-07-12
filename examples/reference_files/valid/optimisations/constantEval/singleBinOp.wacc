@@ -1,0 +1,4 @@
+begin
+    int result = 1 + 2;
+    println result
+end 

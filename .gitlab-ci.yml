@@ -1,0 +1,23 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  artifacts:
+    paths:
+      - target/
+      - bin/
+      - src/main/
+  script:
+    - make clean
+    - cd antlr_config && ./antlrBuild
+    - cd ../
+    - mkdir -p bin
+    - javac -sourcepath src/main/kotlin -d bin -cp lib/antlr-4.9.3-complete.jar src/main/kotlin/antlr/*.java
+    - make
+
+test:
+  stage: test
+  script:
+    - mvn test

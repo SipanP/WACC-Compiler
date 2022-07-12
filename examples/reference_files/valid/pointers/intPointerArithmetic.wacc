@@ -1,0 +1,16 @@
+# Test int pointers will increment by 4 bytes in pointer arithmetic
+
+# Output:
+# 1
+# 2
+# 3
+
+# Program:
+
+begin
+  int[] a = [1, 2, 3];
+  int *p = &a[1];
+  println *(p - 1);
+  println *p;
+  println *(p + 1)
+end

@@ -1,0 +1,4 @@
+ begin
+    bool x = !!true;
+    println x
+end

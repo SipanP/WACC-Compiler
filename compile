@@ -1,0 +1,5 @@
+#!/usr/bin/ruby
+# Ruby front-end for the compiler.
+
+system("kotlin -cp target/classes:lib/antlr-4.9.3-complete.jar MainKt #{ARGV[0]} #{ARGV[1]}")
+exit $?.exitstatus

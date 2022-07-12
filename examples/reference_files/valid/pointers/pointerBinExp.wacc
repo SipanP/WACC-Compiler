@@ -1,0 +1,22 @@
+# If boolean expressions with pointers and nested reference dereference
+
+# Output:
+# 2
+# true
+
+# Program:
+
+begin
+  int a = 1;
+  int b = 2;
+  int *a1 = &a;
+  int *b1 = &b;
+  if *b1 > *a1
+  then
+    println *b1;
+    println *&b1 == b1
+  else
+    println *a1;
+    println *&a1 == a1
+  fi
+end

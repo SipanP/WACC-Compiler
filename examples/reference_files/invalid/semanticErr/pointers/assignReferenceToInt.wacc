@@ -1,0 +1,15 @@
+# Tries to assign a reference to an int should return semantic error
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int a = 1;
+  int *p = &a;
+  *p = &a
+end

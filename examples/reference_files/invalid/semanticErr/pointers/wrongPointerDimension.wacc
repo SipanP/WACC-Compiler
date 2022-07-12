@@ -1,0 +1,15 @@
+# Tries to assign a pointer of pointer int ** to pointer int * should return semantic error
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int a = 1;
+  int *p = &a;
+  int *p2 = &p
+end

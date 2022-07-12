@@ -1,0 +1,14 @@
+# Tries to dereference an int to a pointer should return semantic error
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int a = 1;
+  int *p = *a
+end

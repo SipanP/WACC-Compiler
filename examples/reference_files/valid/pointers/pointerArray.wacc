@@ -1,0 +1,18 @@
+# Declare pointer arrays and dereferencing them as array elements
+
+# Output:
+# 1
+# 2
+# 3
+
+# Program:
+
+begin
+  int x = 1;
+  int y = 2;
+  int z = 3;
+  (int *)[] a = [&x, &y, &z];
+  println *a[0];
+  println *a[1];
+  println *a[2]
+end
